@@ -1,0 +1,58 @@
+Private DbConnection As New ADODB.Connection
+
+Private Sub Btn_cls_Click()
+Dim ctrl As Control
+For Each ctrl In Me.Controls
+    If TypeOf ctrl Is TextBox Then   '是否为文本框TextBox
+        ctrl.Text = ""
+    End If
+Next
+End Sub
+
+
+
+Private Sub Btn_save_Click()
+Dim sql As String
+    sql = "select * from patient"
+    rs.AddNew   '新增数据
+    rs.Fields("PatientName") = Trim(PatientName.Text)
+    rs.Fields("HosNo") = Trim(HosNo.Text)
+    rs.Fields("Gender") = Trim(Gender.Text)
+    rs.Fields("Age") = Trim(Age.Text)
+    rs.Fields("Symptom") = Trim(Symptom.Text)
+    rs.Fields("TotalPrice") = Trim(Totalprice.Text)
+End Sub
+
+Private Sub Btn_Search_Click()
+ Dim sqlCommand As String
+    Dim recordSet As ADODB.recordSet
+    sqlCommand = "SELECT P.Name,P.HosNo,P.gender,P.symptom,P.Age,P.CareLevel ,P.TotalPrice ,P.PrePrice ,P.Doctor ,P.Project ,P.Indate  FROM tb_Patient AS p WHERE p.patientNo='" + PatientNo.Text + "';"
+    DbConnection.Open
+    Set recordSet = DbConnection.Execute(sqlCommand)
+            If Not recordSet.EOF Then
+        PatientName.Text = recordSet.Fields("Name")
+        HosNo.Text = recordSet.Fields("HosNo")
+        Gender.Text = recordSet.Fields("Gender")
+        Symptom.Text = recordSet.Fields("Symptom")
+        Age.Text = recordSet.Fields("Age")
+        Carelevel.Text = recordSet.Fields("Carelevel")
+        Totalprice.Text = recordSet.Fields("TotalPrice")
+        Preprice.Text = Symptom.Text = recordSet.Fields("Symptom")
+        Age.Text = recordSet.Fields("Age")
+        Carelevel.Text = recordSet.Fields("Carelevel")
+        Totalprice.Text = recordSet.Fields("TotalPrice")
+        Preprice.Text = recordSet.Fields("Preprice")
+        Doctor.Text = recordSet.Fields("Doctor")
+        Project.Text = recordSet.Fields("Project")
+        Indate.Text = recordSet.Fields("Indate")
+        End If
+    DbConnection.Close
+End Sub
+
+Private Sub Carelevel_Change()
+
+End Sub
+
+Private Sub Form_Load()
+ DbConnection.ConnectionString = "Provider=SQLOLEDB.1;Server=(local);Database=HOSBASE2019;Trusted_Connection=yes"
+End Sub
