@@ -1,0 +1,19 @@
+Private Sub Command1_Click()
+Dim t1 As Integer
+If P.Text = "123456" Then
+t1 = MsgBox("系统登录成功", , "系统提示")
+Form1.Hide
+Else
+t1 = MsgBox("请输入正确密码", , "系统提示")
+P.Text = ""
+End If
+
+End Sub
+
+Private Sub Form_Load()
+P1.Picture = LoadPicture("E:\database-master\界面\P1.jpeg")
+End Sub
+
+Private Sub P1_Click()
+
+End Sub
