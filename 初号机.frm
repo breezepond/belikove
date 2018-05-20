@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin VB.Form Form1 
-   Caption         =   "×ª³ö"
+   Caption         =   "è½¬å‡º"
    ClientHeight    =   4920
    ClientLeft      =   120
    ClientTop       =   465
@@ -10,7 +10,7 @@ Begin VB.Form Form1
    LinkTopic       =   "Form1"
    ScaleHeight     =   4920
    ScaleWidth      =   14745
-   StartUpPosition =   3  '´°¿ÚÈ±Ê¡
+   StartUpPosition =   3  'çª—å£ç¼ºçœ
    Begin VB.TextBox Indate 
       Height          =   375
       Left            =   6960
@@ -61,14 +61,14 @@ Begin VB.Form Form1
       Width           =   1575
    End
    Begin VB.Frame Frame2 
-      Caption         =   "¹¦ÄÜÑ¡Ôñ"
+      Caption         =   "åŠŸèƒ½é€‰æ‹©"
       Height          =   855
       Left            =   3720
       TabIndex        =   17
       Top             =   3840
       Width           =   10695
       Begin VB.CommandButton btn_Search 
-         Caption         =   "²éÑ¯"
+         Caption         =   "æŸ¥è¯¢"
          Height          =   495
          Left            =   5640
          TabIndex        =   35
@@ -76,7 +76,7 @@ Begin VB.Form Form1
          Width           =   1935
       End
       Begin VB.CommandButton Btn_exit 
-         Caption         =   "ÍË³ö"
+         Caption         =   "é€€å‡º"
          Height          =   495
          Left            =   8040
          TabIndex        =   20
@@ -84,7 +84,7 @@ Begin VB.Form Form1
          Width           =   2295
       End
       Begin VB.CommandButton Btn_save 
-         Caption         =   "±£´æ"
+         Caption         =   "ä¿å­˜"
          Height          =   495
          Left            =   3120
          TabIndex        =   19
@@ -92,7 +92,7 @@ Begin VB.Form Form1
          Width           =   2055
       End
       Begin VB.CommandButton Btn_cls 
-         Caption         =   "ÇåÆÁ"
+         Caption         =   "æ¸…å±"
          Height          =   495
          Left            =   480
          TabIndex        =   18
@@ -101,7 +101,7 @@ Begin VB.Form Form1
       End
    End
    Begin VB.Frame Frame1 
-      Caption         =   "ÌáÊ¾ĞÅÏ¢"
+      Caption         =   "æç¤ºä¿¡æ¯"
       Height          =   855
       Left            =   120
       TabIndex        =   16
@@ -166,7 +166,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label12 
       Alignment       =   2  'Center
-      Caption         =   "ÈëÔºÈÕÆÚ"
+      Caption         =   "å…¥é™¢æ—¥æœŸ"
       Height          =   375
       Left            =   5880
       TabIndex        =   33
@@ -175,7 +175,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label11 
       Alignment       =   2  'Center
-      Caption         =   "Èë×¡¿ÆÊÒ"
+      Caption         =   "å…¥ä½ç§‘å®¤"
       Height          =   375
       Left            =   2760
       TabIndex        =   31
@@ -184,7 +184,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label10 
       Alignment       =   2  'Center
-      Caption         =   "Ò½Éú"
+      Caption         =   "åŒ»ç”Ÿ"
       Height          =   375
       Left            =   120
       TabIndex        =   29
@@ -193,7 +193,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label9 
       Alignment       =   2  'Center
-      Caption         =   "Ô¤½»½ğ"
+      Caption         =   "é¢„äº¤é‡‘"
       Height          =   375
       Left            =   9120
       TabIndex        =   27
@@ -202,7 +202,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label8 
       Alignment       =   2  'Center
-      Caption         =   "·ÑÓÃºÏ¼Æ"
+      Caption         =   "è´¹ç”¨åˆè®¡"
       Height          =   375
       Left            =   6120
       TabIndex        =   25
@@ -211,7 +211,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label7 
       Alignment       =   2  'Center
-      Caption         =   "»¤ÀíµÈ¼¶"
+      Caption         =   "æŠ¤ç†ç­‰çº§"
       Height          =   255
       Left            =   2760
       TabIndex        =   23
@@ -220,7 +220,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label6 
       Alignment       =   2  'Center
-      Caption         =   "²¡Çé"
+      Caption         =   "ç—…æƒ…"
       Height          =   255
       Left            =   120
       TabIndex        =   21
@@ -276,7 +276,7 @@ Begin VB.Form Form1
       Y2              =   120
    End
    Begin VB.Label Label15 
-      Caption         =   "²Ù×÷Ô±"
+      Caption         =   "æ“ä½œå‘˜"
       Height          =   255
       Left            =   10800
       TabIndex        =   14
@@ -284,7 +284,7 @@ Begin VB.Form Form1
       Width           =   615
    End
    Begin VB.Label Label14 
-      Caption         =   "×ª¿ÆÊ±¼ä"
+      Caption         =   "è½¬ç§‘æ—¶é—´"
       Height          =   255
       Left            =   5160
       TabIndex        =   12
@@ -292,7 +292,7 @@ Begin VB.Form Form1
       Width           =   735
    End
    Begin VB.Label Label13 
-      Caption         =   "×ªÖÁ"
+      Caption         =   "è½¬è‡³"
       Height          =   255
       Left            =   240
       TabIndex        =   10
@@ -301,7 +301,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label5 
       Alignment       =   2  'Center
-      Caption         =   "ÄêÁä"
+      Caption         =   "å¹´é¾„"
       Height          =   375
       Left            =   11880
       TabIndex        =   8
@@ -310,7 +310,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label4 
       Alignment       =   2  'Center
-      Caption         =   "ĞÔ±ğ"
+      Caption         =   "æ€§åˆ«"
       Height          =   375
       Left            =   9120
       TabIndex        =   6
@@ -319,7 +319,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label3 
       Alignment       =   2  'Center
-      Caption         =   "ĞÕÃû"
+      Caption         =   "å§“å"
       Height          =   375
       Left            =   6120
       TabIndex        =   4
@@ -328,7 +328,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label2 
       Alignment       =   2  'Center
-      Caption         =   "×¡ÔººÅ"
+      Caption         =   "ä½é™¢å·"
       Height          =   375
       Left            =   2880
       TabIndex        =   2
@@ -337,7 +337,7 @@ Begin VB.Form Form1
    End
    Begin VB.Label Label1 
       Alignment       =   2  'Center
-      Caption         =   "²¡ºÅ"
+      Caption         =   "ç—…å·"
       Height          =   255
       Left            =   120
       TabIndex        =   0
@@ -355,7 +355,7 @@ Private DbConnection As New ADODB.Connection
 Private Sub Btn_cls_Click()
 Dim ctrl As Control
 For Each ctrl In Me.Controls
-    If TypeOf ctrl Is TextBox Then   'ÊÇ·ñÎªÎÄ±¾¿òTextBox
+    If TypeOf ctrl Is TextBox Then   'æ˜¯å¦ä¸ºæ–‡æœ¬æ¡†TextBox
         ctrl.Text = ""
     End If
 Next
@@ -374,9 +374,9 @@ Private Sub Btn_save_Click()
     DbConnection.Open
     DbConnection.Execute sqlCommand, rowAffected
     If rowAffected = 1 Then
-        MsgBox "¸üĞÂ³É¹¦", vbInformation, "ÌáÊ¾"
+        MsgBox "æ›´æ–°æˆåŠŸ", vbInformation, "æç¤º"
     Else
-        MsgBox "¸üĞÂÊ§°Ü", vbCritical, "´íÎó"
+        MsgBox "æ›´æ–°å¤±è´¥", vbCritical, "é”™è¯¯"
     End If
     DbConnection.Close
 
